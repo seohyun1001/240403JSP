@@ -2,7 +2,7 @@
   Created by IntelliJ IDEA.
   User: HYOEUN
   Date: 2024-04-03
-  Time: 오후 12:11
+  Time: 오후 12:44
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
@@ -11,10 +11,11 @@
     <title>Title</title>
 </head>
 <body>
-    <h1>NUM1 ${param.num1}</h1>
-    <h1>NUM2 ${param.num2}</h1>
+<form action="/calc/makeResult" method="post">
+    <input type = "number" name = "num1">
+    <input type = "number" name = "num2">
+    <button type = "submit">SEND</button>
+</form>
 
-    <h1>SUM ${Integer.parseInt(param.num1)+Integer.parseInt(param.num2)}</h1>
-    <h1>SUM ${param.num1+param.num2}</h1>
 </body>
 </html>
