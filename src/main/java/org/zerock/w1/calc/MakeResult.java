@@ -17,5 +17,8 @@ public class MakeResult extends HttpServlet {
 
         System.out.printf(" num1: %s", num1);
         System.out.printf(" num2: %s", num2);
+
+        // sendRedirect("서블릿이나 컨트롤러의 주소") : 서블릿이나 컨트롤러의 주소에 맞는 내용 실행
+        resp.sendRedirect("/input"); // "/index" - error : 404
     }
 }
